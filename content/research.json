@@ -25,7 +25,7 @@
     "status": "Work in progress",
     "summary": "Extending TDB-L-CUR to operator-splitting reacting flow solvers. The framework integrates stiff chemistry at representative grid points and reconstructs time-averaged reaction rates, bringing adaptive model reduction into an OpenFOAM chemistry library.",
     "image": "assets/openfoam-1.png",
-    "alt": "Baseline (top) and TDB-L-CUR (bottom) for CO2.",
-    "caption": "Baseline (top) and TDB-L-CUR (bottom). Manuscript in preparation."
+    "alt": "Temporal evolution of the mass fraction of CO₂ for Case 1, predicted by baseline (top) and TDB-L-CUR (bottom).",
+    "caption": "Temporal evolution of the mass fraction of CO₂ for Case 1, predicted by baseline (top) and TDB-L-CUR (bottom)."
   }
 ]
