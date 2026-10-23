@@ -1,0 +1,184 @@
+media:
+  input: assets
+  output: assets
+content:
+- name: profile
+  label: Profile & links
+  type: file
+  path: content/profile.json
+  format: json
+  fields:
+  - name: name
+    label: Name
+    type: string
+    required: true
+  - name: role
+    label: Role
+    type: string
+    required: false
+  - name: affiliation
+    label: Affiliation
+    type: string
+    required: false
+  - name: lab
+    label: Lab
+    type: string
+    required: false
+  - name: email
+    label: Email
+    type: string
+    required: false
+  - name: scholar
+    label: Scholar
+    type: string
+    required: false
+  - name: github
+    label: Github
+    type: string
+    required: false
+  - name: intro
+    label: Intro
+    type: text
+    required: false
+  - name: cv
+    label: Cv
+    type: file
+    required: false
+  - name: education
+    label: Education
+    type: object
+    required: false
+    list: true
+    fields:
+    - name: degree
+      label: Degree
+      type: string
+      required: false
+    - name: institution
+      label: Institution
+      type: string
+      required: false
+    - name: period
+      label: Period
+      type: string
+      required: false
+    - name: detail
+      label: Detail
+      type: string
+      required: false
+- name: research
+  label: Research highlights
+  type: file
+  path: content/research.json
+  format: json
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+  - name: tag
+    label: Tag
+    type: string
+    required: false
+  - name: status
+    label: Status
+    type: string
+    required: false
+    description: 'For example: Published · Combustion and Flame, or Work in progress.'
+  - name: summary
+    label: Summary
+    type: text
+    required: false
+  - name: image
+    label: Image
+    type: image
+    required: true
+  - name: alt
+    label: Alt
+    type: text
+    required: true
+  - name: caption
+    label: Caption
+    type: text
+    required: false
+  - name: link
+    label: Link
+    type: string
+    required: false
+  list: true
+- name: publications
+  label: Publications
+  type: file
+  path: content/publications.json
+  format: json
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+  - name: authors
+    label: Authors
+    type: text
+    required: false
+  - name: journal
+    label: Journal
+    type: string
+    required: false
+  - name: volume
+    label: Volume
+    type: string
+    required: false
+  - name: article
+    label: Article
+    type: string
+    required: false
+  - name: year
+    label: Year
+    type: number
+    required: true
+  - name: doi
+    label: Doi
+    type: string
+    required: false
+  - name: note
+    label: Note
+    type: string
+    required: false
+  - name: pdf
+    label: Pdf
+    type: file
+    required: false
+  list: true
+- name: conferences
+  label: Conferences
+  type: file
+  path: content/conferences.json
+  format: json
+  fields:
+  - name: title
+    label: Title
+    type: string
+    required: true
+  - name: event
+    label: Event
+    type: string
+    required: false
+  - name: location
+    label: Location
+    type: string
+    required: false
+  - name: date
+    label: Date
+    type: string
+    required: false
+  - name: year
+    label: Year
+    type: number
+    required: true
+  - name: start
+    label: Start
+    type: string
+    required: true
+    description: Sort date in YYYY-MM-DD format. For month-only events use the first
+      day; the displayed date is controlled separately.
+  list: true
