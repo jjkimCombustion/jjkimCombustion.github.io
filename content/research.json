@@ -26,6 +26,6 @@
     "summary": "Extending TDB-L-CUR to operator-splitting reacting flow solvers. The framework integrates stiff chemistry at representative grid points and reconstructs time-averaged reaction rates, bringing adaptive model reduction into an OpenFOAM chemistry library.",
     "image": "assets/openfoam-1.png",
     "alt": "Baseline, TDB-L-CUR, and absolute-error fields for NNH on a temperature isosurface in a turbulent flame.",
-    "caption": "NNH on the T = 1200 K isosurface: baseline, TDB-L-CUR, and absolute error. Manuscript in preparation, Fig. 7."
+    "caption": "Baseline and TDB-L-CUR. Manuscript in preparation."
   }
 ]
