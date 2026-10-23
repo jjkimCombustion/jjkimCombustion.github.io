@@ -25,7 +25,7 @@
     "status": "Work in progress",
     "summary": "Extending TDB-L-CUR to operator-splitting reacting flow solvers. The framework integrates stiff chemistry at representative grid points and reconstructs time-averaged reaction rates, bringing adaptive model reduction into an OpenFOAM chemistry library.",
     "image": "assets/openfoam-1.png",
-    "alt": "Baseline, TDB-L-CUR, and absolute-error fields for NNH on a temperature isosurface in a turbulent flame.",
-    "caption": "Baseline and TDB-L-CUR. Manuscript in preparation."
+    "alt": "Baseline (top) and TDB-L-CUR (bottom) for CO2.",
+    "caption": "Baseline (top) and TDB-L-CUR (bottom). Manuscript in preparation."
   }
 ]
