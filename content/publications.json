@@ -1,24 +1,28 @@
-[
-  {
-    "title": "Time-dependent-bases with local CUR decomposition method for accelerating turbulent combustion simulations",
-    "authors": "Jae Jung Kim, Cristian E. Lacey, Jun Hyung Lee, Ki Sung Jung, Jacqueline H. Chen, and Chun Sang Yoo",
-    "journal": "Combustion and Flame",
-    "volume": "286",
-    "article": "114848",
-    "year": 2026,
-    "doi": "https://doi.org/10.1016/j.combustflame.2026.114848",
-    "note": "",
-    "pdf": ""
-  },
-  {
-    "title": "A DNS study of differential diffusion effects on the ignition of a turbulent NH₃/H₂/N₂-air mixing layer",
-    "authors": "Se Young Oh*, Jae Jung Kim*, Ki Sung Jung, and Chun Sang Yoo",
-    "journal": "Combustion and Flame",
-    "volume": "288",
-    "article": "114936",
-    "year": 2026,
-    "doi": "https://doi.org/10.1016/j.combustflame.2026.114936",
-    "note": "* Equal contribution (co-first authors).",
-    "pdf": ""
-  }
-]
+{
+  "title": "Publications",
+  "subtitle": "",
+  "items": [
+    {
+      "title": "Time-dependent-bases with local CUR decomposition method for accelerating turbulent combustion simulations",
+      "authors": "Jae Jung Kim, Cristian E. Lacey, Jun Hyung Lee, Ki Sung Jung, Jacqueline H. Chen, and Chun Sang Yoo",
+      "journal": "Combustion and Flame",
+      "volume": "286",
+      "article": "114848",
+      "year": 2026,
+      "doi": "https://doi.org/10.1016/j.combustflame.2026.114848",
+      "note": "",
+      "pdf": ""
+    },
+    {
+      "title": "A DNS study of differential diffusion effects on the ignition of a turbulent NH₃/H₂/N₂-air mixing layer",
+      "authors": "Se Young Oh*, Jae Jung Kim*, Ki Sung Jung, and Chun Sang Yoo",
+      "journal": "Combustion and Flame",
+      "volume": "288",
+      "article": "114936",
+      "year": 2026,
+      "doi": "https://doi.org/10.1016/j.combustflame.2026.114936",
+      "note": "* Equal contribution (co-first authors).",
+      "pdf": ""
+    }
+  ]
+}

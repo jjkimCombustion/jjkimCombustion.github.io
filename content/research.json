@@ -1,31 +1,35 @@
-[
-  {
-    "title": "Local low-rank models for turbulent combustion",
-    "tag": "Reduced-order modeling",
-    "status": "Published · Combustion and Flame",
-    "summary": "The TDB-L-CUR framework combines spatially localized manifolds with CSP-based stiffness mitigation. Adaptive clustering and sampling follow the evolving flow without offline training, reducing the cost of detailed combustion simulations.",
-    "image": "assets/rom.png",
-    "alt": "DNS and TDB-L-CUR predictions of nitrous oxide mass fraction at five time instants in a three-dimensional turbulent premixed flame.",
-    "caption": "N₂O mass fraction: DNS (top) and TDB-L-CUR (bottom). Kim et al. (2026), Fig. 8.",
-    "link": "https://doi.org/10.1016/j.combustflame.2026.114848"
-  },
-  {
-    "title": "Differential diffusion and ammonia–hydrogen ignition",
-    "tag": "Direct numerical simulation",
-    "status": "Published · Co-first author",
-    "summary": "Using DNS of NH₃/H₂/N₂–air mixing layers, we investigate how preferential hydrogen diffusion and turbulent mixing compete to shape ignition. A tagged-ammonia approach distinguishes fuel-derived nitrogen and provides a consistent measure of differential diffusion.",
-    "image": "assets/ignition.png",
-    "alt": "Chemical explosive mode and temperature fields at four times in a turbulent ammonia–hydrogen mixing layer.",
-    "caption": "Chemical explosive mode (top) and temperature (bottom), Reₜ = 400. Oh, Kim et al. (2026), Fig. 15.",
-    "link": "https://doi.org/10.1016/j.combustflame.2026.114936"
-  },
-  {
-    "title": "Accelerating chemistry in OpenFOAM",
-    "tag": "Scientific computing",
-    "status": "Work in progress",
-    "summary": "Extending TDB-L-CUR to operator-splitting reacting flow solvers. The framework integrates stiff chemistry at representative grid points and reconstructs time-averaged reaction rates, bringing adaptive model reduction into an OpenFOAM chemistry library.",
-    "image": "assets/openfoam-1.png",
-    "alt": "CO₂ mass fraction contours at six times from 0.04 to 0.24 ms, comparing baseline simulations (top row) with TDB-L-CUR (bottom row). Both show closely matching vortex structures that grow and merge over time, with SSIM values above 0.99 throughout.",
-    "caption": "Temporal evolution of the mass fraction of CO₂ for Case 1, predicted by baseline (top) and TDB-L-CUR (bottom)."
-  }
-]
+{
+  "title": "Research highlights",
+  "subtitle": "",
+  "items": [
+    {
+      "title": "Local low-rank models for turbulent combustion",
+      "tag": "Reduced-order modeling",
+      "status": "Published · Combustion and Flame",
+      "summary": "The TDB-L-CUR framework combines spatially localized manifolds with CSP-based stiffness mitigation. Adaptive clustering and sampling follow the evolving flow without offline training, reducing the cost of detailed combustion simulations.",
+      "image": "assets/rom.png",
+      "alt": "DNS and TDB-L-CUR predictions of nitrous oxide mass fraction at five time instants in a three-dimensional turbulent premixed flame.",
+      "caption": "N₂O mass fraction: DNS (top) and TDB-L-CUR (bottom). Kim et al. (2026), Fig. 8.",
+      "link": "https://doi.org/10.1016/j.combustflame.2026.114848"
+    },
+    {
+      "title": "Differential diffusion and ammonia–hydrogen ignition",
+      "tag": "Direct numerical simulation",
+      "status": "Published · Co-first author",
+      "summary": "Using DNS of NH₃/H₂/N₂–air mixing layers, we investigate how preferential hydrogen diffusion and turbulent mixing compete to shape ignition. A tagged-ammonia approach distinguishes fuel-derived nitrogen and provides a consistent measure of differential diffusion.",
+      "image": "assets/ignition.png",
+      "alt": "Chemical explosive mode and temperature fields at four times in a turbulent ammonia–hydrogen mixing layer.",
+      "caption": "Chemical explosive mode (top) and temperature (bottom), Reₜ = 400. Oh, Kim et al. (2026), Fig. 15.",
+      "link": "https://doi.org/10.1016/j.combustflame.2026.114936"
+    },
+    {
+      "title": "Accelerating chemistry in OpenFOAM",
+      "tag": "Scientific computing",
+      "status": "Work in progress",
+      "summary": "Extending TDB-L-CUR to operator-splitting reacting flow solvers. The framework integrates stiff chemistry at representative grid points and reconstructs time-averaged reaction rates, bringing adaptive model reduction into an OpenFOAM chemistry library.",
+      "image": "assets/openfoam-1.png",
+      "alt": "CO₂ mass fraction contours at six times from 0.04 to 0.24 ms, comparing baseline simulations (top row) with TDB-L-CUR (bottom row). Both show closely matching vortex structures that grow and merge over time, with SSIM values above 0.99 throughout.",
+      "caption": "Temporal evolution of the mass fraction of CO₂ for Case 1, predicted by baseline (top) and TDB-L-CUR (bottom)."
+    }
+  ]
+}
