@@ -1,0 +1,43 @@
+{
+  "education": [
+    {
+      "degree": "Combined M.S./Ph.D. in Mechanical Engineering",
+      "institution": "UNIST",
+      "period": "2023 — Present",
+      "detail": "Advisor: Prof. Chun Sang Yoo"
+    },
+    {
+      "degree": "B.S. in Mechanical Engineering",
+      "institution": "UNIST",
+      "period": "2023",
+      "detail": "Minor in Physics · Summa Cum Laude"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Graduate Researcher",
+      "institution": "CCERL, UNIST",
+      "period": "2023–Present"
+    },
+    {
+      "role": "Undergraduate Research Intern",
+      "institution": "CCERL, UNIST",
+      "period": "2020–2023"
+    }
+  ],
+  "tools": [
+    "OpenFOAM",
+    "ANSYS Fluent",
+    "COMSOL"
+  ],
+  "languages": [
+    "C++",
+    "Fortran",
+    "Python",
+    "MATLAB"
+  ],
+  "title": "Background",
+  "subtitle": "Education & experience",
+  "experience_title": "Research experience",
+  "tools_title": "Software & programming languages"
+}
