@@ -1,6 +1,5 @@
 {
   "title": "Publications",
-  "subtitle": "",
   "items": [
     {
       "title": "Time-dependent-bases with local CUR decomposition method for accelerating turbulent combustion simulations",
@@ -9,9 +8,7 @@
       "volume": "286",
       "article": "114848",
       "year": 2026,
-      "doi": "https://doi.org/10.1016/j.combustflame.2026.114848",
-      "note": "",
-      "pdf": ""
+      "doi": "https://doi.org/10.1016/j.combustflame.2026.114848"
     },
     {
       "title": "A DNS study of differential diffusion effects on the ignition of a turbulent NH₃/H₂/N₂-air mixing layer",
@@ -21,8 +18,7 @@
       "article": "114936",
       "year": 2026,
       "doi": "https://doi.org/10.1016/j.combustflame.2026.114936",
-      "note": "* Equal contribution (co-first authors).",
-      "pdf": ""
+      "note": "* Equal contribution (Co-first authors)."
     }
   ]
 }
