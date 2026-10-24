@@ -66,6 +66,38 @@ content:
       label: Detail
       type: string
       required: false
+  - name: short_affiliation
+    label: Header affiliation
+    type: string
+  - name: research_fields
+    label: Research fields (top line)
+    type: string
+  - name: headline
+    label: Main headline
+    type: text
+    description: Use a new line to insert a line break.
+  - name: experience
+    label: Research experience
+    type: object
+    list: true
+    fields:
+    - name: role
+      label: Role
+      type: string
+    - name: institution
+      label: Institution
+      type: string
+    - name: period
+      label: Period
+      type: string
+  - name: tools
+    label: Software / tools
+    type: string
+    list: true
+  - name: languages
+    label: Programming languages
+    type: string
+    list: true
 - name: research
   label: Research highlights
   type: file
@@ -174,7 +206,9 @@ content:
   - name: year
     label: Year
     type: number
-    required: true
+    required: false
+    hidden: true
+    description: Legacy field; display and sorting use Date and Start.
   - name: start
     label: Start
     type: string
@@ -182,3 +216,78 @@ content:
     description: Sort date in YYYY-MM-DD format. For month-only events use the first
       day; the displayed date is controlled separately.
   list: true
+- name: site
+  label: Site settings
+  type: file
+  path: content/site.json
+  format: json
+  fields:
+  - name: title_suffix
+    label: Title Suffix
+    type: string
+  - name: nav_research
+    label: Nav Research
+    type: string
+  - name: nav_publications
+    label: Nav Publications
+    type: string
+  - name: nav_conferences
+    label: Nav Conferences
+    type: string
+  - name: nav_about
+    label: Nav About
+    type: string
+  - name: research_title
+    label: Research Title
+    type: string
+  - name: research_subtitle
+    label: Research Subtitle
+    type: string
+  - name: publications_title
+    label: Publications Title
+    type: string
+  - name: conferences_title
+    label: Conferences Title
+    type: string
+  - name: conferences_subtitle
+    label: Conferences Subtitle
+    type: string
+  - name: about_title
+    label: About Title
+    type: string
+  - name: about_subtitle
+    label: About Subtitle
+    type: string
+  - name: experience_title
+    label: Experience Title
+    type: string
+  - name: tools_title
+    label: Tools Title
+    type: string
+  - name: research_link_label
+    label: Research Link Label
+    type: string
+  - name: upcoming_label
+    label: Upcoming Label
+    type: string
+  - name: back_to_top
+    label: Back To Top
+    type: string
+  - name: email_label
+    label: Email Label
+    type: string
+  - name: scholar_label
+    label: Scholar Label
+    type: string
+  - name: github_label
+    label: Github Label
+    type: string
+  - name: cv_label
+    label: Cv Label
+    type: string
+  - name: doi_label
+    label: Doi Label
+    type: string
+  - name: pdf_label
+    label: Pdf Label
+    type: string
