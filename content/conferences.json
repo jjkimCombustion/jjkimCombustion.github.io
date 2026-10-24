@@ -19,7 +19,7 @@
     },
     {
       "date": "May 13–15, 2026",
-      "start": "2026-05-14",
+      "start": "2026-05-13",
       "title": "Development of an OpenFOAM-based library for acceleration of stiff chemistry via TDB-CUR algorithm",
       "event": "71st KOSCO Symposium",
       "location": "Busan, Republic of Korea",
@@ -34,7 +34,7 @@
       "year": 2025
     },
     {
-      "date": "February 09-13, 2025",
+      "date": "February 9-13, 2025",
       "start": "2025-02-09",
       "title": "Time-Dependent-Bases with Local CUR Decomposition Method for Turbulent Combustion Simulations",
       "event": "16th International Conference on Combustion and Energy Utilization",
@@ -42,7 +42,7 @@
       "year": 2025
     },
     {
-      "date": "November 09-11, 2023",
+      "date": "November 9-11, 2023",
       "start": "2023-11-09",
       "title": "Numerical Study on the Flame Structures and Edge Dynamics of DME Nonpremixed Counterflow Cool Flame",
       "event": "66th KOSCO Symposium",
