@@ -16,10 +16,22 @@ def link(x,label,cls=''): return f'<a class="{cls}" href="{url(x)}">{esc(label)}
 def record(value):
  return defaultdict(str, {k: ('' if v is None else v) for k, v in value.items()})
 p=record(load('profile'))
-rs=[record(r) for r in load('research')]
-ps=[record(r) for r in load('publications')]
-cs=[record(r) for r in load('conferences')]
 s=record(load('site'))
+def section(name, default_title):
+ data=load(name)
+ # Accept the old list format while files are being uploaded individually.
+ if isinstance(data, list):
+  data={'title': s.get(name+'_title', default_title), 'subtitle': s.get(name+'_subtitle',''), 'items': data}
+ data=record(data)
+ data['items']=[record(item) for item in (data.get('items') or [])]
+ return data
+research_section=section('research','Research highlights')
+publications_section=section('publications','Publications')
+conferences_section=section('conferences','Conference presentations')
+rs=research_section['items']
+ps=publications_section['items']
+cs=conferences_section['items']
+publications_subtitle=('<span>'+esc(publications_section['subtitle'])+'</span>') if publications_section['subtitle'] else '' 
 # Background is independent from the home profile in the CMS.
 bg=record(load('background'))
 
@@ -54,9 +66,9 @@ css=(ROOT/'style.css').read_text(encoding='utf-8')
 page=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{page_title}</title><meta name="description" content="{esc(p['intro'])}"><meta name="theme-color" content="#153b54"><style>{css}</style></head><body>
 <a class="skip" href="#main">Skip to content</a><header><nav aria-label="Main navigation"><a class="wordmark" href="#home">{esc(p['name'])}<span>{short_affiliation}</span></a><div class="nav-links"><a href="#research">{esc(s['nav_research'])}</a><a href="#publications">{esc(s['nav_publications'])}</a><a href="#conferences">{esc(s['nav_conferences'])}</a><a href="#about">{esc(s['nav_about'])}</a></div></nav></header>
 <main id="main"><section class="hero" id="home"><div class="eyebrow">{esc(p['research_fields'])}</div><h1>{esc(p['name'])}<span>{headline}</span></h1><div class="hero-bottom"><div class="affiliation"><strong>{esc(p['role'])}</strong><span>{esc(p['affiliation'])}</span><span>{esc(p['lab'])}</span></div><div class="intro"><p>{esc(p['intro'])}</p><div class="contact-links">{link(('mailto:'+p['email']) if p['email'] else '',s['email_label'])}{link(p['scholar'],s['scholar_label'])}{link(p['github'],s['github_label'])}{link(p.get('cv'),s['cv_label'])}</div></div></div></section>
-<section id="research"><div class="section-heading"><h2>{esc(s['research_title'])}</h2><span>{esc(s['research_subtitle'])}</span></div>{research}</section>
-<section id="publications"><div class="section-heading"><h2>{esc(s['publications_title'])}</h2>{link(p['scholar'],s['scholar_label'])}</div>{publications}</section>
-<section id="conferences"><div class="section-heading"><h2>{esc(s['conferences_title'])}</h2><span>{esc(s['conferences_subtitle'])}</span></div>{conferences}</section>
+<section id="research"><div class="section-heading"><h2>{esc(research_section['title'])}</h2><span>{esc(research_section['subtitle'])}</span></div>{research}</section>
+<section id="publications"><div class="section-heading"><h2>{esc(publications_section['title'])}</h2>{publications_subtitle}{link(p['scholar'],s['scholar_label'])}</div>{publications}</section>
+<section id="conferences"><div class="section-heading"><h2>{esc(conferences_section['title'])}</h2><span>{esc(conferences_section['subtitle'])}</span></div>{conferences}</section>
 <section id="about"><div class="section-heading"><h2>{esc(bg['title'])}</h2><span>{esc(bg['subtitle'])}</span></div><div class="about-grid"><div>{education}</div><aside><h3>{esc(bg['experience_title'])}</h3>{experience}<h3>{esc(bg['tools_title'])}</h3>{tools}{languages}</aside></div></section>
 </main><footer><div><strong>{esc(p['name'])}</strong><span>{esc(p['affiliation'])}</span></div>{link(('mailto:'+p['email']) if p['email'] else '',p['email'])}<a href="#home">{esc(s['back_to_top'])} ↑</a></footer>
 <script>document.querySelectorAll('[data-start]').forEach(el=>{{el.hidden=el.dataset.start<new Date().toLocaleDateString('en-CA',{{timeZone:'Asia/Seoul'}})}});</script></body></html>'''
