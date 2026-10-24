@@ -3,7 +3,7 @@ media:
   output: assets
 content:
 - name: profile
-  label: Profile & links
+  label: Home
   type: file
   path: content/profile.json
   format: json
@@ -12,6 +12,16 @@ content:
     label: Name
     type: string
     required: true
+  - name: short_affiliation
+    label: Header affiliation
+    type: string
+  - name: research_fields
+    label: Research fields
+    type: string
+  - name: headline
+    label: Headline
+    type: text
+    description: Use a new line to insert a line break.
   - name: role
     label: Role
     type: string
@@ -24,119 +34,69 @@ content:
     label: Lab
     type: string
     required: false
+  - name: intro
+    label: Introduction
+    type: text
+    required: false
   - name: email
     label: Email
     type: string
     required: false
   - name: scholar
-    label: Scholar
+    label: Google Scholar URL
     type: string
     required: false
   - name: github
-    label: Github
+    label: GitHub URL
     type: string
-    required: false
-  - name: intro
-    label: Intro
-    type: text
     required: false
   - name: cv
-    label: Cv
+    label: CV PDF
     type: file
     required: false
-  - name: education
-    label: Education
-    type: object
-    required: false
-    list: true
-    fields:
-    - name: degree
-      label: Degree
-      type: string
-      required: false
-    - name: institution
-      label: Institution
-      type: string
-      required: false
-    - name: period
-      label: Period
-      type: string
-      required: false
-    - name: detail
-      label: Detail
-      type: string
-      required: false
-  - name: short_affiliation
-    label: Header affiliation
+  - name: title_suffix
+    label: Browser tab subtitle
     type: string
-  - name: research_fields
-    label: Research fields (top line)
-    type: string
-  - name: headline
-    label: Main headline
-    type: text
-    description: Use a new line to insert a line break.
-  - name: experience
-    label: Research experience
-    type: object
-    list: true
-    fields:
-    - name: role
-      label: Role
-      type: string
-    - name: institution
-      label: Institution
-      type: string
-    - name: period
-      label: Period
-      type: string
-  - name: tools
-    label: Software / tools
-    type: string
-    list: true
-  - name: languages
-    label: Programming languages
-    type: string
-    list: true
+    description: Shown after your name in the browser tab.
 - name: research
   label: Research highlights
   type: file
   path: content/research.json
   format: json
   fields:
+  - name: tag
+    label: Tag
+    type: string
+    required: false
   - name: title
     label: Title
     type: string
     required: true
-  - name: tag
-    label: Tag
-    type: string
+  - name: summary
+    label: Summary
+    type: text
     required: false
   - name: status
     label: Status
     type: string
     required: false
     description: 'For example: Published · Combustion and Flame, or Work in progress.'
-  - name: summary
-    label: Summary
-    type: text
+  - name: link
+    label: Link
+    type: string
     required: false
   - name: image
     label: Image
     type: image
     required: true
-  - name: alt
-    label: Alt
-    type: text
-    required: true
   - name: caption
     label: Caption
     type: text
     required: false
-  - name: link
-    label: Link
-    type: string
-    required: false
+  - name: alt
+    label: Alt text (accessibility)
+    type: text
+    required: true
   list: true
 - name: publications
   label: Publications
@@ -187,6 +147,16 @@ content:
   path: content/conferences.json
   format: json
   fields:
+  - name: date
+    label: Display date
+    type: string
+    required: false
+  - name: start
+    label: Sort date (YYYY-MM-DD)
+    type: string
+    required: true
+    description: Sort date in YYYY-MM-DD format. For month-only events use the first
+      day; the displayed date is controlled separately.
   - name: title
     label: Title
     type: string
@@ -199,95 +169,72 @@ content:
     label: Location
     type: string
     required: false
-  - name: date
-    label: Date
-    type: string
-    required: false
   - name: year
     label: Year
     type: number
     required: false
     hidden: true
     description: Legacy field; display and sorting use Date and Start.
-  - name: start
-    label: Start
-    type: string
-    required: true
-    description: Sort date in YYYY-MM-DD format. For month-only events use the first
-      day; the displayed date is controlled separately.
   list: true
-- name: site
-  label: Site settings
+- name: background
+  label: Background
   type: file
-  path: content/site.json
+  path: content/background.json
   format: json
   fields:
-  - name: title_suffix
-    label: Title Suffix
+  - name: title
+    label: Section title
     type: string
-  - name: nav_research
-    label: Nav Research
+  - name: subtitle
+    label: Section subtitle
     type: string
-  - name: nav_publications
-    label: Nav Publications
-    type: string
-  - name: nav_conferences
-    label: Nav Conferences
-    type: string
-  - name: nav_about
-    label: Nav About
-    type: string
-  - name: research_title
-    label: Research Title
-    type: string
-  - name: research_subtitle
-    label: Research Subtitle
-    type: string
-  - name: publications_title
-    label: Publications Title
-    type: string
-  - name: conferences_title
-    label: Conferences Title
-    type: string
-  - name: conferences_subtitle
-    label: Conferences Subtitle
-    type: string
-  - name: about_title
-    label: About Title
-    type: string
-  - name: about_subtitle
-    label: About Subtitle
-    type: string
+  - name: education
+    label: Education
+    type: object
+    required: false
+    list: true
+    fields:
+    - name: degree
+      label: Degree
+      type: string
+      required: false
+    - name: institution
+      label: Institution
+      type: string
+      required: false
+    - name: period
+      label: Period
+      type: string
+      required: false
+    - name: detail
+      label: Detail
+      type: string
+      required: false
   - name: experience_title
-    label: Experience Title
+    label: Experience heading
     type: string
+  - name: experience
+    label: Research experience
+    type: object
+    list: true
+    fields:
+    - name: role
+      label: Role
+      type: string
+    - name: institution
+      label: Institution
+      type: string
+    - name: period
+      label: Period
+      type: string
   - name: tools_title
-    label: Tools Title
+    label: Software & languages heading
     type: string
-  - name: research_link_label
-    label: Research Link Label
+  - name: tools
+    label: Software / tools
     type: string
-  - name: upcoming_label
-    label: Upcoming Label
+    list: true
+  - name: languages
+    label: Programming languages
     type: string
-  - name: back_to_top
-    label: Back To Top
-    type: string
-  - name: email_label
-    label: Email Label
-    type: string
-  - name: scholar_label
-    label: Scholar Label
-    type: string
-  - name: github_label
-    label: Github Label
-    type: string
-  - name: cv_label
-    label: Cv Label
-    type: string
-  - name: doi_label
-    label: Doi Label
-    type: string
-  - name: pdf_label
-    label: Pdf Label
-    type: string
+    list: true
