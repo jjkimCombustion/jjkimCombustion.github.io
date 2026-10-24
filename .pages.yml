@@ -64,40 +64,51 @@ content:
   path: content/research.json
   format: json
   fields:
-  - name: tag
-    label: Tag
-    type: string
-    required: false
   - name: title
-    label: Title
+    label: Section title
     type: string
-    required: true
-  - name: summary
-    label: Summary
-    type: text
-    required: false
-  - name: status
-    label: Status
+  - name: subtitle
+    label: Section subtitle
     type: string
-    required: false
-    description: 'For example: Published · Combustion and Flame, or Work in progress.'
-  - name: link
-    label: Link
-    type: string
-    required: false
-  - name: image
-    label: Image
-    type: image
-    required: true
-  - name: caption
-    label: Caption
-    type: text
-    required: false
-  - name: alt
-    label: Alt text (accessibility)
-    type: text
-    required: true
-  list: true
+    description: Optional. Leave empty to hide the subtitle.
+  - name: items
+    label: Research items
+    type: object
+    list: true
+    fields:
+    - name: tag
+      label: Tag
+      type: string
+      required: false
+    - name: title
+      label: Title
+      type: string
+      required: true
+    - name: summary
+      label: Summary
+      type: text
+      required: false
+    - name: status
+      label: Status
+      type: string
+      required: false
+      description: 'For example: Published · Combustion and Flame, or Work in progress.'
+    - name: link
+      label: Link
+      type: string
+      required: false
+    - name: image
+      label: Image
+      type: image
+      required: true
+    - name: caption
+      label: Caption
+      type: text
+      required: false
+    - name: alt
+      label: Alt text (accessibility)
+      type: text
+      required: true
 - name: publications
   label: Publications
   type: file
@@ -105,77 +116,99 @@ content:
   format: json
   fields:
   - name: title
-    label: Title
+    label: Section title
     type: string
-    required: true
-  - name: authors
-    label: Authors
-    type: text
-    required: false
-  - name: journal
-    label: Journal
+  - name: subtitle
+    label: Section subtitle
     type: string
-    required: false
-  - name: volume
-    label: Volume
-    type: string
-    required: false
-  - name: article
-    label: Article
-    type: string
-    required: false
-  - name: year
-    label: Year
-    type: number
-    required: true
-  - name: doi
-    label: Doi
-    type: string
-    required: false
-  - name: note
-    label: Note
-    type: string
-    required: false
-  - name: pdf
-    label: Pdf
-    type: file
-    required: false
-  list: true
+    description: Optional. Leave empty to hide the subtitle.
+  - name: items
+    label: Publication items
+    type: object
+    list: true
+    fields:
+    - name: title
+      label: Title
+      type: string
+      required: true
+    - name: authors
+      label: Authors
+      type: text
+      required: false
+    - name: journal
+      label: Journal
+      type: string
+      required: false
+    - name: volume
+      label: Volume
+      type: string
+      required: false
+    - name: article
+      label: Article
+      type: string
+      required: false
+    - name: year
+      label: Year
+      type: number
+      required: true
+    - name: doi
+      label: Doi
+      type: string
+      required: false
+    - name: note
+      label: Note
+      type: string
+      required: false
+    - name: pdf
+      label: Pdf
+      type: file
+      required: false
 - name: conferences
   label: Conferences
   type: file
   path: content/conferences.json
   format: json
   fields:
-  - name: date
-    label: Display date
-    type: string
-    required: false
-  - name: start
-    label: Sort date (YYYY-MM-DD)
-    type: string
-    required: true
-    description: Sort date in YYYY-MM-DD format. For month-only events use the first
-      day; the displayed date is controlled separately.
   - name: title
-    label: Title
+    label: Section title
     type: string
-    required: true
-  - name: event
-    label: Event
+  - name: subtitle
+    label: Section subtitle
     type: string
-    required: false
-  - name: location
-    label: Location
-    type: string
-    required: false
-  - name: year
-    label: Year
-    type: number
-    required: false
-    hidden: true
-    description: Legacy field; display and sorting use Date and Start.
-  list: true
+    description: Optional. Leave empty to hide the subtitle.
+  - name: items
+    label: Conference items
+    type: object
+    list: true
+    fields:
+    - name: date
+      label: Display date
+      type: string
+      required: false
+    - name: start
+      label: Sort date (YYYY-MM-DD)
+      type: string
+      required: true
+      description: Sort date in YYYY-MM-DD format. For month-only events use the first
+        day; the displayed date is controlled separately.
+    - name: title
+      label: Title
+      type: string
+      required: true
+    - name: event
+      label: Event
+      type: string
+      required: false
+    - name: location
+      label: Location
+      type: string
+      required: false
+    - name: year
+      label: Year
+      type: number
+      required: false
+      hidden: true
+      description: Legacy field; display and sorting use Date and Start.
 - name: background
   label: Background
   type: file
