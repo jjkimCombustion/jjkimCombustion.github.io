@@ -1,14 +1,14 @@
 {
   "name": "Jae Jung Kim",
-  "role": "Graduate Researcher · Combined M.S./Ph.D. Program",
-  "affiliation": "Mechanical Engineering · UNIST",
-  "lab": "Clean Combustion & Energy Research Laboratory",
-  "email": "rlawownd0905@unist.ac.kr",
-  "scholar": "https://scholar.google.com/citations?user=iQ4fGRwAAAAJ",
-  "github": "https://github.com/jjkimCombustion",
-  "intro": "I study turbulent reacting flows and develop reduced-order models to make high-fidelity combustion simulations more efficient. My research combines adaptive low-rank approximation, chemical stiffness analysis, and direct numerical simulation.",
   "short_affiliation": "UNIST",
   "research_fields": "COMPUTATIONAL COMBUSTION · REDUCED-ORDER MODELING",
   "headline": "Understanding reacting flows.\nMaking their simulation more efficient.",
+  "role": "Graduate Researcher · Combined M.S./Ph.D. Program",
+  "affiliation": "Mechanical Engineering · UNIST",
+  "lab": "Clean Combustion & Energy Research Laboratory",
+  "intro": "I study turbulent reacting flows and develop computational methods to make high-fidelity combustion simulations more efficient. My research brings together reduced-order modeling, numerical methods, and detailed chemical kinetics to address the computational challenges of complex reacting flows.",
+  "email": "rlawownd0905@unist.ac.kr",
+  "scholar": "https://scholar.google.com/citations?user=iQ4fGRwAAAAJ",
+  "github": "https://github.com/jjkimCombustion",
   "title_suffix": "Combustion & Reduced-Order Modeling"
 }
