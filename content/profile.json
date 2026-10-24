@@ -20,5 +20,31 @@
       "period": "2023",
       "detail": "Minor in Physics · Summa Cum Laude"
     }
+  ],
+  "short_affiliation": "UNIST",
+  "research_fields": "COMPUTATIONAL COMBUSTION · REDUCED-ORDER MODELING",
+  "headline": "Understanding reacting flows.\nMaking their simulation more efficient.",
+  "experience": [
+    {
+      "role": "Graduate Researcher",
+      "institution": "CCERL, UNIST",
+      "period": "2023–Present"
+    },
+    {
+      "role": "Undergraduate Research Intern",
+      "institution": "CCERL, UNIST",
+      "period": "2020–2023"
+    }
+  ],
+  "tools": [
+    "OpenFOAM",
+    "ANSYS Fluent",
+    "COMSOL"
+  ],
+  "languages": [
+    "C++",
+    "Fortran",
+    "Python",
+    "MATLAB"
   ]
 }
