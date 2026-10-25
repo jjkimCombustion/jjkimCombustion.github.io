@@ -28,7 +28,7 @@
       "status": "Work in progress",
       "image": "assets/openfoam-1.png",
       "caption": "CO₂ mass fraction: baseline simulation (top) and TDB-L-CUR (bottom).",
-      "alt": "CO₂ mass fraction contours at six times from 0.04 to 0.24 ms, comparing baseline simulations (top row) with TDB-L-CUR (bottom row). Both show closely matching vortex structures that grow and merge over time, with SSIM values above 0.99 throughout."
+      "alt": "CO₂ mass fraction contours at six times instants in a two-dimensional temporally evolving jet flame, comparing baseline simulations (top row) with TDB-L-CUR (bottom row)."
     }
   ]
 }
