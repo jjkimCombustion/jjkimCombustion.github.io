@@ -14,7 +14,7 @@
     {
       "tag": "Direct numerical simulation",
       "title": "Differential diffusion and ammonia–hydrogen ignition",
-      "summary": "We use DNS of turbulent NH₃/H₂/N₂–air mixing layers to investigate how differential diffusion of hydrogen and turbulent mixing influence ignition. A tagged-ammonia approach distinguishes fuel-derived nitrogen and provides a measure of differential diffusion.",
+      "summary": "We use DNS of turbulent NH₃/H₂/N₂–air mixing layers to investigate how differential diffusion of hydrogen and turbulent mixing influence ignition. A tagged-ammonia approach distinguishes fuel-derived nitrogen and provides a proper measure of differential diffusion.",
       "status": "Published · Combustion and Flame (Co-first author)",
       "link": "https://doi.org/10.1016/j.combustflame.2026.114936",
       "image": "assets/ignition.png",
@@ -22,7 +22,7 @@
       "alt": "Chemical explosive mode and temperature fields at four times in a turbulent ammonia–hydrogen mixing layer."
     },
     {
-      "tag": "Scientific computing",
+      "tag": "Numerical methods",
       "title": "Accelerating chemistry in OpenFOAM",
       "summary": "We extend TDB-L-CUR to operator-splitting reacting-flow simulations in OpenFOAM. The method performs stiff chemistry integration only at selected grid points and combines inexpensive reaction-rate evaluations with low-rank reconstruction to reduce the computational cost of detailed chemistry.",
       "status": "Work in progress",
