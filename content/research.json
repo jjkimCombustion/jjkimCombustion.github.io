@@ -4,7 +4,7 @@
     {
       "tag": "Reduced-order modeling",
       "title": "Local low-rank models for turbulent combustion",
-      "summary": "The TDB-L-CUR framework combines spatially localized manifolds with CSP-based stiffness mitigation. Adaptive clustering and sampling follow the evolving flow without offline training, reducing the cost of detailed combustion simulations.",
+      "summary": "TDB-L-CUR reduces the computational cost of turbulent combustion simulations using localized low-rank approximations. The method combines unsupervised clustering, local manifold, sparse sampling, and CSP-based treatment of fast chemical modes.",
       "status": "Published · Combustion and Flame",
       "link": "https://doi.org/10.1016/j.combustflame.2026.114848",
       "image": "assets/rom.png",
