@@ -4,7 +4,7 @@
     {
       "tag": "Reduced-order modeling",
       "title": "Local low-rank models for turbulent combustion",
-      "summary": "TDB-L-CUR reduces the computational cost of turbulent combustion simulations using localized low-rank approximations. The method combines unsupervised clustering and sparse sampling with CSP-based treatment of fast chemical modes.",
+      "summary": "TDB-L-CUR reduces the computational cost of turbulent combustion simulations using localized low-rank approximations.\nThe method combines unsupervised clustering and sparse sampling with CSP-based treatment of fast chemical modes.",
       "status": "Published · Combustion and Flame",
       "link": "https://doi.org/10.1016/j.combustflame.2026.114848",
       "image": "assets/rom.png",
@@ -14,7 +14,7 @@
     {
       "tag": "Direct numerical simulation",
       "title": "Differential diffusion and ammonia–hydrogen ignition",
-      "summary": "We use DNS of turbulent NH₃/H₂/N₂–air mixing layers to investigate how differential diffusion of hydrogen and turbulent mixing influence ignition. A tagged-ammonia approach distinguishes fuel-derived nitrogen and enables the quantification of differential diffusion effects.",
+      "summary": "We use DNS of turbulent NH₃/H₂/N₂–air mixing layers to investigate how differential diffusion of hydrogen and turbulent mixing influence ignition.\nA tagged-ammonia approach distinguishes fuel-derived nitrogen and enables the quantification of differential diffusion effects.",
       "status": "Published · Combustion and Flame (Co-first author)",
       "link": "https://doi.org/10.1016/j.combustflame.2026.114936",
       "image": "assets/ignition.png",
@@ -24,10 +24,10 @@
     {
       "tag": "Numerical methods",
       "title": "Accelerating chemistry in OpenFOAM",
-      "summary": "We extend TDB-L-CUR to operator-splitting reacting-flow simulations in OpenFOAM. The method performs stiff chemistry integration only at selected grid points and combines inexpensive reaction-rate evaluations with low-rank reconstruction to reduce the computational cost of detailed chemistry.",
+      "summary": "We extend TDB-L-CUR to operator-splitting reacting-flow simulations in OpenFOAM.\nThe method performs stiff chemistry integration only at selected grid points and combines inexpensive reaction-rate evaluations with low-rank reconstruction to reduce the computational cost of detailed chemistry.",
       "status": "Work in progress",
       "image": "assets/openfoam-1.png",
-      "caption": "Temporal evolution of CO₂ mass fraction in a turbulent reacting flow: full-order simulation (top) and TDB-L-CUR (bottom).",
+      "caption": "CO₂ mass fraction: full-order simulation (top) and TDB-L-CUR (bottom).",
       "alt": "CO₂ mass fraction contours at six times from 0.04 to 0.24 ms, comparing baseline simulations (top row) with TDB-L-CUR (bottom row). Both show closely matching vortex structures that grow and merge over time, with SSIM values above 0.99 throughout."
     }
   ]
