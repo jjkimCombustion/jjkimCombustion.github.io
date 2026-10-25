@@ -27,7 +27,7 @@
       "summary": "We extend TDB-L-CUR to operator-splitting reacting-flow simulations in OpenFOAM. The method performs stiff chemistry integration only at selected grid points and combines inexpensive reaction-rate evaluations with low-rank reconstruction to reduce the computational cost of detailed chemistry.",
       "status": "Work in progress",
       "image": "assets/openfoam-1.png",
-      "caption": "CO₂ mass fraction: full-order simulation (top) and TDB-L-CUR (bottom).",
+      "caption": "CO₂ mass fraction: baseline simulation (top) and TDB-L-CUR (bottom).",
       "alt": "CO₂ mass fraction contours at six times from 0.04 to 0.24 ms, comparing baseline simulations (top row) with TDB-L-CUR (bottom row). Both show closely matching vortex structures that grow and merge over time, with SSIM values above 0.99 throughout."
     }
   ]
